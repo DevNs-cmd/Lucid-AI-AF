@@ -1,0 +1,51 @@
+"""Exposed Core System security, authorization, and exception objects of the LUCID AI Backend."""
+
+from app.core.exceptions import (
+    AIProviderException,
+    AIProviderServiceException,
+    CustomHTTPException,
+    DatabaseException,
+    DatabaseServiceException,
+    EntityNotFoundException,
+    ErrorResponseDetail,
+    GlobalErrorResponse,
+    LUCIDException,
+    UserAuthenticationException,
+    UserAuthorizationException,
+    ValidationException,
+)
+from app.core.security import (
+    PermissionChecker,
+    RoleChecker,
+    TokenUser,
+    create_access_token,
+    create_refresh_token,
+    get_current_user,
+    get_password_hash,
+    verify_password,
+    verify_token,
+)
+
+__all__ = [
+    "LUCIDException",
+    "DatabaseException",
+    "AIProviderException",
+    "CustomHTTPException",
+    "UserAuthenticationException",
+    "UserAuthorizationException",
+    "EntityNotFoundException",
+    "ValidationException",
+    "AIProviderServiceException",
+    "DatabaseServiceException",
+    "ErrorResponseDetail",
+    "GlobalErrorResponse",
+    "get_password_hash",
+    "verify_password",
+    "create_access_token",
+    "create_refresh_token",
+    "verify_token",
+    "TokenUser",
+    "get_current_user",
+    "RoleChecker",
+    "PermissionChecker",
+]
