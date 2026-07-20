@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd lucid-ai-af && npm install && npm run build",
-  "outputDirectory": "lucid-ai-af/.next",
-  "installCommand": "cd lucid-ai-af && npm install",
+  "rootDirectory": "lucid-ai-af",
   "framework": "nextjs",
-  "rootDirectory": "lucid-ai-af"
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next"
 }
